@@ -24,3 +24,16 @@ Generar el código para imprimir la siguiente tabla:
   <tbody>
  </table>
 =end
+puts '<table>'
+puts ' <tbody>'
+puts '  <tr>'
+4.times { |i| puts "    <td> #{i + 1} </td>" }
+puts '  </tr>'
+puts '  <tr>'
+4.times { |i| puts "    <td> #{i + 5} </td>" }
+puts '  </tr>'
+puts '  <tr>'
+4.times { |i| puts "    <td> #{i + 9} </td>" }
+puts '  </tr>'
+puts ' </tbody'
+puts '</table>'
